@@ -12,7 +12,7 @@
 const nums = [13, 87, 2, 89, 12, 4, 90, 63];
 
 // Your code here:
-const numsTimesTwo= nums.map((num)=> num*2)
+const numsTimesTwo= nums.map((num)=> num*2);
 console.log(numsTimesTwo);
 
 
@@ -106,7 +106,7 @@ const propertyName  = "username";
 //Creating an object called userProfile
 const userProfile = {
     //using 'propertyName' as a dynamic key and assigning a value
-    propertyName : "Husain",
+    [propertyName] : "Husain",
 };
 //Console logging the userProfile value to see the results
 console.log(userProfile); //will get the result: { propertyName: 'Husain' }
@@ -129,6 +129,7 @@ function printMessage(noun="cat", adjective="orange"){
 }
 printMessage()
 printMessage("dog", "Golden");
+printMessage( undefined,"Golden");
 
 
 // ! Exercise 9:
